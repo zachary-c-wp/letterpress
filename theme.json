@@ -1,0 +1,49 @@
+{
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"border": {},
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"dimensions": {
+				"minHeight": true
+			},
+			"layout": {
+				"contentSize": "40rem",
+				"wideSize": "64rem"
+			},
+			"position": {
+				"sticky": true
+			},
+			"shadow": {
+				"defaultPresets": true,
+			},
+			"palette": [
+				{
+					"color": "#111",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#eee",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#888",
+					"name": "Contrast",
+					"slug": "contrast"
+				}
+			],
+			"blocks": {
+				"core/image": {
+					"lightbox": {
+						"allowEditing": false
+					}
+				}
+			}
+		}
+	}
+}
