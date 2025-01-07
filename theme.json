@@ -2,24 +2,18 @@
 	"version": 2,
 	"settings": {
 		"appearanceTools": true,
+		"blocks": {
+			"core/image": {
+				"lightbox": {
+					"allowEditing": false
+				}
+			}
+		},
 		"border": {},
 		"color": {
 			"defaultDuotone": false,
 			"defaultGradients": false,
 			"defaultPalette": false,
-			"dimensions": {
-				"minHeight": true
-			},
-			"layout": {
-				"contentSize": "40rem",
-				"wideSize": "64rem"
-			},
-			"position": {
-				"sticky": true
-			},
-			"shadow": {
-				"defaultPresets": true,
-			},
 			"palette": [
 				{
 					"color": "#111",
@@ -36,14 +30,20 @@
 					"name": "Contrast",
 					"slug": "contrast"
 				}
-			],
-			"blocks": {
-				"core/image": {
-					"lightbox": {
-						"allowEditing": false
-					}
-				}
-			}
+			]
+		},
+		"dimensions": {
+			"minHeight": true
+		},
+		"layout": {
+			"contentSize": "40rem",
+			"wideSize": "64rem"
+		},
+		"position": {
+			"sticky": true
+		},
+		"shadow": {
+			"defaultPresets": true
 		}
 	}
 }
