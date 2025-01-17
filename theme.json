@@ -66,8 +66,8 @@
 			"minHeight": true
 		},
 		"layout": {
-			"contentSize": "39rem",
-			"wideSize": "58.5rem"
+			"contentSize": "44rem",
+			"wideSize": "75rem"
 		},
 		"position": {
 			"sticky": true
@@ -85,29 +85,19 @@
 			},
 			"spacingSizes": [
 				{
-					"size": "0.75rem",
-					"slug": "20",
-					"name": "1"
-				},
-				{
-					"size": "1.5rem",
+					"size": "clamp(1.49625rem, 0.849rem + 2.605vw, 1.995rem)",
 					"slug": "30",
-					"name": "2"
+					"name": "Small"
 				},
 				{
-					"size": "3rem",
+					"size": "clamp(2.9925rem, 1.68rem + 5.25vw, 3.99rem)",
 					"slug": "40",
-					"name": "3"
+					"name": "Medium"
 				},
 				{
-					"size": "4.5rem",
+					"size": "clamp(4.48875rem, 2.52rem + 7.875vw, 5.985rem)",
 					"slug": "50",
-					"name": "4"
-				},
-				{
-					"size": "6rem",
-					"slug": "60",
-					"name": "5"
+					"name": "Large"
 				}
 			]
 		},
@@ -116,29 +106,67 @@
 			"dropCap": false,
 			"fontSizes": [
 				{
-					"name": "Extra Small",
-					"size": "1rem",
+					"fluid": {
+						"min": "0.75em",
+						"max": "1em"
+					},
+					"name": "X Small",
+					"size": "1em",
 					"slug": "x-small"
 				},
 				{
+					"fluid": {
+						"min": "0.9975em",
+						"max": "1.333em"
+					},
 					"name": "Small",
-					"size": "1.333rem",
+					"size": "1.333em",
 					"slug": "small"
 				},
 				{
+					"fluid": {
+						"min": "1.33275em",
+						"max": "1.777em"
+					},
 					"name": "Medium",
-					"size": "1.777rem",
+					"size": "1.777em",
 					"slug": "medium"
 				},
 				{
+					"fluid": {
+						"min": "1.777em",
+						"max": "2.369em"
+					},
 					"name": "Large",
-					"size": "2.369rem",
+					"size": "2.369em",
 					"slug": "large"
 				},
 				{
-					"name": "Extra Large",
-					"size": "3.157rem",
+					"fluid": {
+						"min": "2.36775em",
+						"max": "3.157em"
+					},
+					"name": "X Large",
+					"size": "3.157em",
 					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"min": "3.15675em",
+						"max": "4.209em"
+					},
+					"name": "XX Large",
+					"size": "4.209em",
+					"slug": "xx-large"
+				},
+				{
+					"fluid": {
+						"min": "4.2075em",
+						"max": "5.61em"
+					},
+					"name": "XXX Large",
+					"size": "5.61em",
+					"slug": "xxx-large"
 				}
 			],
 			"fontStyle": true,
@@ -165,7 +193,19 @@
 			"core/paragraph": {
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
-					"lineHeight": "var:preset|spacing|30"
+					"lineHeight": "1lh"
+				},
+				"spacing": {
+					"margin": {
+						"top": "0",
+						"bottom": "var:preset|spacing|30"
+					}
+				}
+			},
+			"core/quote": {
+				"typography": {
+					"fontSize": "var:preset|font-size|medium",
+					"lineHeight": "var:preset|spacing|40"
 				},
 				"spacing": {
 					"margin": {
@@ -178,41 +218,40 @@
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontSize": "var:preset|font-size|x-large",
+					"fontSize": "var:preset|font-size|xx-large",
 					"lineHeight": "var:preset|spacing|50"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "var:preset|font-size|large",
+					"fontSize": "var:preset|font-size|x-large",
 					"lineHeight": "var:preset|spacing|40"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "var:preset|font-size|medium",
+					"fontSize": "var:preset|font-size|large",
 					"lineHeight": "var:preset|spacing|30"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "var:preset|font-size|small",
+					"fontSize": "var:preset|font-size|medium",
 					"lineHeight": "var:preset|spacing|30"
 				}
 			},
 			"h5": {
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
-					"lineHeight": "var:preset|spacing|30",
-					"fontStyle": "italic"
+					"lineHeight": "var:preset|spacing|30"
 				}
 			},
 			"h6": {
 				"typography": {
 					"fontSize": "var:preset|font-size|small",
 					"lineHeight": "var:preset|spacing|30",
-					"fontWeight": "normal",
-					"fontStyle": "italic"
+					"fontStyle": "italic",
+					"fontWeight": "normal"
 				}
 			},
 			"heading": {
@@ -236,7 +275,7 @@
 		},
 		"typography": {
 			"fontSize": "var:preset|font-size|small",
-			"lineHeight": "var:preset|spacing|30"
+			"lineHeight": "clamp(1.49625rem, 0.849rem + 2.605vw, 1.995rem)"
 		}
 	},
 	"templateParts": [

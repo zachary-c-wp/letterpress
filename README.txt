@@ -10,6 +10,7 @@ Short description. No more than 150 chars.
 
 == TODO ==
 * Use fluid typography
+* Add greyscale and other utility palettes
 * Use fluid spacing
 
 == Description ==

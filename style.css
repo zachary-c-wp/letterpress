@@ -2,7 +2,7 @@
  * Theme Name:        WP FSE Theme
  * Theme URI:         https://zacharycallaway.com/zc-wp-fse-theme
  * Description:       Custom theme description...
- * Version:           0.1.0
+ * Version:           0.0.1
  * Author:            Zachary Callaway
  * Author URI:        https://zacharycallaway.com
  * Tags:              block-patterns, full-site-editing
@@ -14,6 +14,27 @@
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+/*
+ * Set root font size to user settings
+ */
+html {
+	font-size: 100%;
+}
+
+/*
+ * Clear out top margins for all browsers
+ */
+html * {
+	margin-top: 0;
+}
+
+/*
+ * Set font-size of paragraph in block quote relative to block quote font size
+ */
+/* .wp-block-quote p {
+
+} */
 
 /*
  * Print styles from: https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css
@@ -80,17 +101,4 @@
 	h3 {
 		page-break-after: avoid;
 	}
-}
-
-body {
-	background: linear-gradient(
-		to bottom,
-		#fff,
-		#fff 50%,
-		#eee 50%,
-		#eee
-	  );
-	  /* The rectangle in which to repeat.
-		 It can be fully wide in this case */
-	  background-size: 100% 3rem;
 }
