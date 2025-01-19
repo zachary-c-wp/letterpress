@@ -202,10 +202,26 @@
 					}
 				}
 			},
-			"core/quote": {
+			"core/pullquote": {
 				"typography": {
 					"fontSize": "var:preset|font-size|medium",
 					"lineHeight": "var:preset|spacing|40"
+				},
+				"spacing": {
+					"margin": {
+						"top": "var:preset|spacing|40",
+						"bottom": "var:preset|spacing|40"
+					},
+					"padding": {
+						"top": "calc( var(--wp--preset--spacing--40) - 4px )",
+						"bottom": "calc( var(--wp--preset--spacing--40 ) - 4px )"
+					}
+				}
+			},
+			"core/quote": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small",
+					"lineHeight": "var:preset|spacing|30"
 				},
 				"spacing": {
 					"margin": {
