@@ -13,5 +13,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial theme files and directory structures
 
-[unreleased]: https://github.com/zachary-c-wp/zc-wp-fse-theme/compare/v0.0.1...HEAD
-[0.0.1]: https://github.com/zachary-c-wp/zc-wp-fse-theme/releases/tag/v0.0.1
+[unreleased]: https://github.com/zachary-c-wp/letterpress/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/zachary-c-wp/letterpress/releases/tag/v0.0.1

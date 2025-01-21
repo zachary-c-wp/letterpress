@@ -85,6 +85,11 @@
 			},
 			"spacingSizes": [
 				{
+					"size": "clamp(0.748125rem, 0.42rem + 1.313vw, 0.9975rem)",
+					"slug": "20",
+					"name": "X-Small"
+				},
+				{
 					"size": "clamp(1.49625rem, 0.849rem + 2.605vw, 1.995rem)",
 					"slug": "30",
 					"name": "Small"
