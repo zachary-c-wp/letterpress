@@ -45,8 +45,18 @@ function letterpress_register_block_styles() {
 		'name'         => 'lede',
 		'label'        => __( 'Lede', 'letterpress' ),
 		'inline_style' => 'p.is-style-lede {
-			font-size: var( --wp--preset--font-size--medium );
-			line-height: var( --wp--preset--spacing--40 );
+			font-size: 1.125em;
+			line-height: var( --wp--preset--spacing--30 );
 		}'
     ) );
+}
+
+// Add internationalization support
+add_action( 'after_setup_theme', 'letterpress_load_textdomain' );
+
+function letterpress_load_textdomain() {
+	load_child_theme_textdomain(
+		'letterpress',
+		get_theme_file_path( 'assets/lang' )
+	);
 }

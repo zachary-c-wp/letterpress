@@ -30,11 +30,25 @@ html * {
 }
 
 /*
- * Set font-size of paragraph in block quote relative to block quote font size
+ * Override default margin-bottom for body element
  */
-/* .wp-block-quote p {
+body {
+	margin-bottom: 0;
+}
 
-} */
+/**
+ * Prevent orphans on large text elements
+ */
+
+blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: pretty;
+}
 
 /*
  * Print styles from: https://github.com/h5bp/html5-boilerplate/blob/main/dist/css/style.css
